@@ -6,7 +6,7 @@ var content =fs.readFileSync(fileName);
 var buf = new Buffer(content, "utf-8");
 var string = buf.toString("utf-8", 0, 28);
 app.use(express.logger());
-app.use(express.static(__dirname + '/public');
+app.use(express.static(__dirname + '/public'));
 
 app.get('/', function(request, response) {
 
